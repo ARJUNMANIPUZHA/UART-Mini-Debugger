@@ -1,0 +1,2 @@
+../Src/debugger_driver.c:23:6:capture_cpu_state	3
+../Src/debugger_driver.c:125:6:debug_handler	4
