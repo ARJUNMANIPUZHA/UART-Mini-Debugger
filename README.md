@@ -29,6 +29,16 @@ Captured CPU state includes:
 
 ---
 
+## Components Required
+
+* STM32F407 Discovery Board
+* USB to UART Converter (e.g., FTDI, CP2102)
+* Jumper wires
+* PC with serial terminal software (PuTTY, minicom, screen, etc.)
+* ARM GCC Toolchain (for building the project)
+
+---
+
 ## System Behavior
 
 ### Normal Execution Mode
@@ -57,7 +67,7 @@ Captured CPU state includes:
 ### USART Driver
 
 * Configured USART2 for transmission and reception
-* Baud rate configured using peripheral clock calculations
+* Baud rate configured using peripheral clock calculations (set to 9600)
 * RXNE interrupt used for receiving commands
 * Basic send functions implemented for character, string, and hexadecimal output
 
@@ -115,7 +125,12 @@ Captured CPU state includes:
    * PA3 → RX
    * GND → GND
 4. Open a serial terminal (e.g., PuTTY, minicom)
-5. Configure the terminal with the appropriate baud rate (e.g., 115200)
+5. Configure the terminal:
+
+   * Baud rate: 9600
+   * Data bits: 8
+   * Stop bits: 1
+   * Parity: None
 
 ### Commands
 
@@ -129,7 +144,7 @@ Captured CPU state includes:
 
 ## Sample Output
 
-```
+```id="2kd8fh"
 === CPU SNAPSHOT ===
 
 General Purpose Registers
@@ -171,3 +186,8 @@ xPSR    = 0x21000000
 ## Conclusion
 
 This project demonstrates a practical approach to understanding low-level debugging mechanisms in embedded systems. It highlights key concepts such as register-level programming, interrupt handling, and inline assembly integration on ARM Cortex-M4.
+
+## Demo
+
+Watch the demo here:  
+[Project Demo Video](https://youtu.be/zrci9QAzYlY)
