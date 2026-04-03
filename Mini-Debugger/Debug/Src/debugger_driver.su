@@ -1,2 +1,0 @@
-../Src/debugger_driver.c:23:6:capture_cpu_state	16	static,ignoring_inline_asm
-../Src/debugger_driver.c:125:6:debug_handler	16	static,ignoring_inline_asm
