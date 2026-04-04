@@ -1,0 +1,3 @@
+../Src/main.c:7:5:main	2
+../Src/main.c:26:6:printMenu	1
+../Src/main.c:40:6:spinnerTask	3
