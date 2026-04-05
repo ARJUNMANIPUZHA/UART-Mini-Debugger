@@ -45,14 +45,13 @@ void spinnerTask(USART_RegDef_t* pUsart)
 
     delayCounter++;
 
-    /* Slow down spinner (adjust this value if needed) */
     if(delayCounter < 200000)
         return;
 
     delayCounter = 0;
 
-    USART_SendChar(pUsart, '\r');              // return to same line
-    USART_SendChar(pUsart, spinner[index]);    // spinner char
+    USART_SendChar(pUsart, '\r');              
+    USART_SendChar(pUsart, spinner[index]);    
     USART_SendString(pUsart, " System Running...");
 
 
