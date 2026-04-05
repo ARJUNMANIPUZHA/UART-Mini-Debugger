@@ -1,0 +1,9 @@
+../Src/uart_driver.c:3:6:USART_Init	16	static
+../Src/uart_driver.c:29:6:USART_SetBaudRate	40	static
+../Src/uart_driver.c:56:9:USART_GetFlagStatus	16	static
+../Src/uart_driver.c:66:6:USART_SendChar	16	static
+../Src/uart_driver.c:74:6:USART_SendString	16	static
+../Src/uart_driver.c:83:6:USART_SendHex	48	static
+../Src/uart_driver.c:95:6:USART_InterrputConfig	4	static
+../Src/uart_driver.c:102:6:USART2_IRQHandler	16	static
+../Src/uart_driver.c:115:6:USART_ApplicationEventCallback	16	static
